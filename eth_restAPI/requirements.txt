@@ -1,0 +1,6 @@
+psycopg2
+bs4
+Web3
+Flask-Script
+Flask-Migrate
+Flask-SQLAlchemy
