@@ -71,7 +71,7 @@ services:
       - CORE_CHAINCODE_LOGGING_LEVEL=DEBUG
       - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
       - CORE_PEER_ID=peer1.org1.example.com
-      - CORE_PEER_ADDRESS=peer1.org1.example.com:7151
+      - CORE_PEER_ADDRESS=peer1.org1.example.com:7051
       - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=composer_default
       - CORE_PEER_LOCALMSPID=Org1MSP
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/peer/msp
@@ -81,8 +81,8 @@ services:
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start --peer-defaultchain=false
     ports:
-      - 7151:7151
-      - 7153:7153
+      - 7151:7051
+      - 7153:7053
     volumes:
         - /var/run/:/host/var/run/
         - ./:/etc/hyperledger/configtx
@@ -90,7 +90,7 @@ services:
         - ./crypto-config/peerOrganizations/org1.example.com/users:/etc/hyperledger/msp/users
     depends_on:
       - orderer.example.com
-      - couchdb
+      - couchdb1
 
 
   couchdb:
