@@ -1,0 +1,24 @@
+#photo1 {
+  width: 600px;
+  height: 400px;
+}
+#photo2 {
+  width: 600px;
+  height: 400px;
+}
+#voteStatus {
+  color: red;
+}
+#candidatA,#candidatB {
+  text-align: center;
+}
+#photos {
+  margin-top: 40px;
+}
+
+#metamaskalert{
+  display:none;
+}
+ #finishVote{
+   display:none;
+ }

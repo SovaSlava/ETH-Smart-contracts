@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet">
+<title>Выборы нового руководителя отдела продаж</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+<script src="script.js"></script>
+</head>
+<center><h3>Выборы нового руководителя отдела продаж</h3></center>
+<div id=metamaskalert class="alert alert-danger">
+  <strong>Для корректной работы системы голосования - вам необходимо установить плагин MetaMask</strong>
+</div>
+<div id=voteStatus></div>
+<div id=finishVote class="alert alert-success">
+  <button id=finishVoteButton>Время для голосования истекло. Определить победителя голосования</button>
+</div>
+<div class="row" id=photos>
+  <div id=candidatA class="col-sm-6"><img id=photo1 src=photo1.png><br><button  id=vote1 type="button" class="btn btn-success btn-md">Голосовать</button></div>
+  <div id=candidatB class="col-sm-6"><img id=photo2 src=photo2.jpg><br><button  id=vote2 type="button" class="btn btn-success btn-md">Голосовать</button></div>
+</div>
+<center><button id=vote3 type="button" class="btn btn-danger btn-md">Голосовать против всех</button></center><br>
+<div id="chartContainer" style="width: 100%; height: 300px"></div>
+</html>
