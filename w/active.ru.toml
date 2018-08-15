@@ -1,3 +1,5 @@
+home_button = "Привед, я кнопко"
+
 [HelloPerson]
 hash = "sha1-5b49bfdad81fedaeefb224b0ffc2acc58b09cff5"
 other = "Hola {{.Name}}"
